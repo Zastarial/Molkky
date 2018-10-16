@@ -119,44 +119,64 @@
   </resheader>
   <data name="tbx_rules.Text" xml:space="preserve">
     <value>RÈGLES :
-
-Le principe du jeu est de faire tomber des quilles en bois à l’aide d’un lanceur appelé Mölkky. Les quilles sont marquées de 1 à 12. La première équipe arrivant à totaliser exactement 50 points gagne la partie.
+Le principe du jeu est de faire tomber des quilles en bois à l’aide d’un lanceur appelé Mölkky. Les quilles sont marquées de 1 à 12. Le premier joueur (ou équipe) arrivant à totaliser exactement 50 points gagne la partie.
 
 Au début d’une partie, les quilles sont placées à environ 4 mètres des joueurs. Lorsqu’une quille a été abattue, on la redresse sur son pied (et non à la tête), le numéro face à la zone de lancer, juste là où elle se trouve et sans la soulever du sol. C’est ainsi qu’au cours de la partie, les quilles s’éparpillent et s’éloignent.
 
 Les joueurs (ou équipes) jouent chacun à leur tour. On ne rejoue pas immédiatement lorsqu’on a fait un raté.
 
 
-
 Compter les points :
-
 Pour abattre les quilles, les joueurs lancent le Mölkky.
-
-Tous les styles de lancers sont autorisés, à partir du moment où le lancer n’est pas dangereux pour les personnes autour.
+Tous les styles de lancers sont autorisés.
 
 Il y a deux façons de marquer des points :
-
 – si un joueur fait tomber plusieurs quilles, il gagne autant de points que de quilles abattues.
-
 – si un joueur fait tomber une seule quille, il gagne autant de points que le nombre inscrit dessus.
 
 Exemple :
-
-un joueur vise la quille n°12 et la fait tomber seule, il marque 12 points.
-
-s’il fait tomber la n°12 et dans le même temps la n°4, il ne marque que 2 points.
+un joueur vise la quille n°12 et la fait tomber seule, il marque 12 points. S’il fait tomber la n°12 et dans le même temps la n°4, il ne marque que 2 points.
 
 Attention : une quille n’est considérée comme abattue que si elle est tombée entièrement sur le sol et ne repose sur aucune autre. Si elle se trouve en équilibre sur un élément de terrain naturel, souche d’arbre, grosse racine, tronc d’arbre… elle n’est pas considérée comme tombée. Si la quille repose sur un élément artificiel, bordure en ciment, planche de délimitation de terrain… elle est considérée comme tombée au sol. Si une quille est couchée sur le sol et une autre repose en équilibre sur une bordure artificielle, il faut donc compter 2 quilles au sol, soit 2 points.
 
 L’équipe gagnante est la première qui arrive à totaliser exactement 50 points.
 
-La partie s’arrête.
+La manche s’arrête.
 
-Si une équipe dépasse ce score (50), elle retombe à 25.
+Si une équipe dépasse ce score, elle retombe à 25.
 
-Élimination : Le joueur (s’il est tout seul) ou l’équipe qui fait trois blancs consécutifs (trois lancers au cours duquel aucun point n’est marqué, ou un mordu sur la ligne de lancement) est éliminé. Bien entendu, si tous les joueurs sont éliminés avant que quiconque atteigne 50 points, le dernier en jeu a gagné.
 
-Un tirage au sort (pile/face) détermine l’équipe qui commence la partie.</value>
+Élimination : 
+Le joueur (s’il est tout seul) ou l’équipe qui fait trois blancs consécutifs (trois lancers au cours duquel aucun point n’est marqué, ou un mordu sur la ligne de lancement) est éliminé. Bien entendu, si tous les joueurs sont éliminés avant que quiconque atteigne 50 points, le dernier en jeu a gagné.
+
+Un tirage au sort (pile/face) détermine l’équipe qui commence la première manche. Après 2 manches, et, en cas d’égalité 1 manche partout, chaque équipe additionne ses points des deux manches. Celle qui a marqué le plus de points commence la troisième et dernière manche. En cas d’égalité, il y a Mölkkout.
+
+
+Mölkkout :
+
+Les quilles 6, 4, 12, 10 et 8 sont placées les unes derrières les autres et espacées d’une longueur de Mölkky. La quille 6 étant à 3,5 mètres.
+
+
+Le joueur (ou l’équipe) effectue(e) 4 lancés (chaque équipe à tour de rôle, et chaque joueur dans une équipe à tour de rôle également).
+
+Après chaque coup, les quilles sont replacées sur leur position d’origine.
+
+1 quille renversée = le nombre de point inscrit sur la quille,
+
+Plusieurs quilles renversées = 1 point par quille.
+
+Le joueur (ou l’équipe) qui a marqué le plus de points après les 4 lancers remporte le Mölkkout.
+
+S’il y a toujours égalité au nombre de points après les 4 lancers chacun, on continu le Mölkkout en « mort subite » à chaque tour.
+
+ 
+
+Le lancer doit avoir lieu derrière le mölkkaari (zone de lancer) sans le toucher.
+Le joueur doit quitter l’espace du Mölkkaari en repartant vers l’arrière, il ne doit pas franchir le Mölkkaari, sous peine de considérer le lancer comme nul. L’équipe marque 0 point et les quilles sont relevées sur leurs nouvelles positions.
+
+En cas de faute, volontaire ou pas, le lancer est considéré comme nul et l’équipe marque 0 point (coup identique à un blanc), de plus :
+– Son score reste identique si l’équipe a un score inférieur à 37 points.
+– Son score retombe à 25 si l’équipe a un score supérieur ou égal à 37 points.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
