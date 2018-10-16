@@ -55,7 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Class1.cs" />
+    <Compile Include="Classes\Equipe.cs" />
+    <Compile Include="Classes\Joueur.cs" />
+    <Compile Include="Classes\Partie.cs" />
+    <Compile Include="Classes\Statistique.cs" />
     <Compile Include="Vues\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,12 +91,6 @@
     <Compile Include="Vues\partie.Designer.cs">
       <DependentUpon>partie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vues\Statistique.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vues\Statistique.Designer.cs">
-      <DependentUpon>Statistique.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Vues\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,10 +116,9 @@
     <EmbeddedResource Include="Vues\partie.resx">
       <DependentUpon>partie.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\Statistique.resx">
-      <DependentUpon>Statistique.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -134,7 +130,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />

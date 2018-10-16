@@ -27,8 +27,7 @@ namespace Molkky
 
         private void btn_statistique_Click(object sender, EventArgs e)
         {
-            Statistique stats = new Statistique();
-            stats.Show();
+            
         }
     }
 }

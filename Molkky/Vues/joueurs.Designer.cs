@@ -28,12 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tbx_name = new System.Windows.Forms.TextBox();
             this.btn_addplayer = new MetroFramework.Controls.MetroButton();
             this.dtg_player = new MetroFramework.Controls.MetroGrid();
@@ -41,12 +38,19 @@
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GagnerJouer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_jouer = new MetroFramework.Controls.MetroButton();
-            this.dtg_news = new MetroFramework.Controls.MetroGrid();
-            this.titre = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_statistique = new MetroFramework.Controls.MetroButton();
+            this.lbl_nomJoueur = new MetroFramework.Controls.MetroLabel();
+            this.lbl_ratioPourcentage = new MetroFramework.Controls.MetroLabel();
+            this.lbl_ratio = new MetroFramework.Controls.MetroLabel();
+            this.lbl_partieGagnees = new MetroFramework.Controls.MetroLabel();
+            this.lbl_partiewin = new MetroFramework.Controls.MetroLabel();
+            this.lbl_partieJouees = new MetroFramework.Controls.MetroLabel();
+            this.lbl_partieplayed = new MetroFramework.Controls.MetroLabel();
+            this.lbl_efficacitePoints = new MetroFramework.Controls.MetroLabel();
+            this.lbl_efficacite = new MetroFramework.Controls.MetroLabel();
+            this.lbl_precisionPourcentage = new MetroFramework.Controls.MetroLabel();
+            this.lbl_precision = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_news)).BeginInit();
             this.SuspendLayout();
             // 
             // tbx_name
@@ -73,41 +77,41 @@
             this.dtg_player.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_player.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtg_player.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_player.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_player.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dtg_player.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_player.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.selection,
             this.nom,
             this.GagnerJouer});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_player.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_player.DefaultCellStyle = dataGridViewCellStyle8;
             this.dtg_player.EnableHeadersVisualStyles = false;
             this.dtg_player.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtg_player.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtg_player.Location = new System.Drawing.Point(394, 63);
             this.dtg_player.Name = "dtg_player";
             this.dtg_player.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_player.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_player.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtg_player.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtg_player.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtg_player.Size = new System.Drawing.Size(344, 150);
@@ -138,63 +142,6 @@
             this.btn_jouer.UseSelectable = true;
             this.btn_jouer.Click += new System.EventHandler(this.btn_jouer_Click);
             // 
-            // dtg_news
-            // 
-            this.dtg_news.AllowUserToResizeRows = false;
-            this.dtg_news.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtg_news.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtg_news.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dtg_news.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_news.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtg_news.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_news.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.titre,
-            this.description});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_news.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dtg_news.EnableHeadersVisualStyles = false;
-            this.dtg_news.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dtg_news.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtg_news.Location = new System.Drawing.Point(23, 253);
-            this.dtg_news.Name = "dtg_news";
-            this.dtg_news.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_news.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dtg_news.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dtg_news.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtg_news.Size = new System.Drawing.Size(493, 315);
-            this.dtg_news.TabIndex = 4;
-            // 
-            // titre
-            // 
-            this.titre.HeaderText = "News";
-            this.titre.Name = "titre";
-            // 
-            // description
-            // 
-            this.description.HeaderText = "Description";
-            this.description.Name = "description";
-            this.description.Width = 350;
-            // 
             // btn_statistique
             // 
             this.btn_statistique.Location = new System.Drawing.Point(634, 219);
@@ -205,13 +152,122 @@
             this.btn_statistique.UseSelectable = true;
             this.btn_statistique.Click += new System.EventHandler(this.btn_statistique_Click);
             // 
+            // lbl_nomJoueur
+            // 
+            this.lbl_nomJoueur.AutoSize = true;
+            this.lbl_nomJoueur.Location = new System.Drawing.Point(302, 310);
+            this.lbl_nomJoueur.Name = "lbl_nomJoueur";
+            this.lbl_nomJoueur.Size = new System.Drawing.Size(113, 19);
+            this.lbl_nomJoueur.TabIndex = 58;
+            this.lbl_nomJoueur.Text = "*Nom du Joueur*";
+            // 
+            // lbl_ratioPourcentage
+            // 
+            this.lbl_ratioPourcentage.AutoSize = true;
+            this.lbl_ratioPourcentage.Location = new System.Drawing.Point(561, 466);
+            this.lbl_ratioPourcentage.Name = "lbl_ratioPourcentage";
+            this.lbl_ratioPourcentage.Size = new System.Drawing.Size(34, 19);
+            this.lbl_ratioPourcentage.TabIndex = 57;
+            this.lbl_ratioPourcentage.Text = "70%";
+            // 
+            // lbl_ratio
+            // 
+            this.lbl_ratio.AutoSize = true;
+            this.lbl_ratio.Location = new System.Drawing.Point(441, 466);
+            this.lbl_ratio.Name = "lbl_ratio";
+            this.lbl_ratio.Size = new System.Drawing.Size(111, 19);
+            this.lbl_ratio.TabIndex = 56;
+            this.lbl_ratio.Text = "Ratio de victoire :";
+            // 
+            // lbl_partieGagnees
+            // 
+            this.lbl_partieGagnees.AutoSize = true;
+            this.lbl_partieGagnees.Location = new System.Drawing.Point(256, 480);
+            this.lbl_partieGagnees.Name = "lbl_partieGagnees";
+            this.lbl_partieGagnees.Size = new System.Drawing.Size(179, 19);
+            this.lbl_partieGagnees.TabIndex = 55;
+            this.lbl_partieGagnees.Text = "*nombre de partie gagnées*";
+            // 
+            // lbl_partiewin
+            // 
+            this.lbl_partiewin.AutoSize = true;
+            this.lbl_partiewin.Location = new System.Drawing.Point(136, 480);
+            this.lbl_partiewin.Name = "lbl_partiewin";
+            this.lbl_partiewin.Size = new System.Drawing.Size(108, 19);
+            this.lbl_partiewin.TabIndex = 54;
+            this.lbl_partiewin.Text = "Parties gagnées :";
+            // 
+            // lbl_partieJouees
+            // 
+            this.lbl_partieJouees.AutoSize = true;
+            this.lbl_partieJouees.Location = new System.Drawing.Point(256, 450);
+            this.lbl_partieJouees.Name = "lbl_partieJouees";
+            this.lbl_partieJouees.Size = new System.Drawing.Size(172, 19);
+            this.lbl_partieJouees.TabIndex = 53;
+            this.lbl_partieJouees.Text = "*nombre de parties jouées*";
+            // 
+            // lbl_partieplayed
+            // 
+            this.lbl_partieplayed.AutoSize = true;
+            this.lbl_partieplayed.Location = new System.Drawing.Point(136, 450);
+            this.lbl_partieplayed.Name = "lbl_partieplayed";
+            this.lbl_partieplayed.Size = new System.Drawing.Size(96, 19);
+            this.lbl_partieplayed.TabIndex = 52;
+            this.lbl_partieplayed.Text = "Parties jouées :";
+            // 
+            // lbl_efficacitePoints
+            // 
+            this.lbl_efficacitePoints.AutoSize = true;
+            this.lbl_efficacitePoints.Location = new System.Drawing.Point(256, 403);
+            this.lbl_efficacitePoints.Name = "lbl_efficacitePoints";
+            this.lbl_efficacitePoints.Size = new System.Drawing.Size(155, 19);
+            this.lbl_efficacitePoints.TabIndex = 51;
+            this.lbl_efficacitePoints.Text = "*nombre de points*/tour";
+            // 
+            // lbl_efficacite
+            // 
+            this.lbl_efficacite.AutoSize = true;
+            this.lbl_efficacite.Location = new System.Drawing.Point(136, 403);
+            this.lbl_efficacite.Name = "lbl_efficacite";
+            this.lbl_efficacite.Size = new System.Drawing.Size(67, 19);
+            this.lbl_efficacite.TabIndex = 50;
+            this.lbl_efficacite.Text = "Efficacité :";
+            // 
+            // lbl_precisionPourcentage
+            // 
+            this.lbl_precisionPourcentage.AutoSize = true;
+            this.lbl_precisionPourcentage.Location = new System.Drawing.Point(256, 373);
+            this.lbl_precisionPourcentage.Name = "lbl_precisionPourcentage";
+            this.lbl_precisionPourcentage.Size = new System.Drawing.Size(34, 19);
+            this.lbl_precisionPourcentage.TabIndex = 49;
+            this.lbl_precisionPourcentage.Text = "80%";
+            // 
+            // lbl_precision
+            // 
+            this.lbl_precision.AutoSize = true;
+            this.lbl_precision.Location = new System.Drawing.Point(136, 373);
+            this.lbl_precision.Name = "lbl_precision";
+            this.lbl_precision.Size = new System.Drawing.Size(123, 19);
+            this.lbl_precision.TabIndex = 48;
+            this.lbl_precision.Text = "Précision générale :";
+            // 
             // joueurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.lbl_nomJoueur);
+            this.Controls.Add(this.lbl_ratioPourcentage);
+            this.Controls.Add(this.lbl_ratio);
+            this.Controls.Add(this.lbl_partieGagnees);
+            this.Controls.Add(this.lbl_partiewin);
+            this.Controls.Add(this.lbl_partieJouees);
+            this.Controls.Add(this.lbl_partieplayed);
+            this.Controls.Add(this.lbl_efficacitePoints);
+            this.Controls.Add(this.lbl_efficacite);
+            this.Controls.Add(this.lbl_precisionPourcentage);
+            this.Controls.Add(this.lbl_precision);
             this.Controls.Add(this.btn_statistique);
-            this.Controls.Add(this.dtg_news);
             this.Controls.Add(this.btn_jouer);
             this.Controls.Add(this.dtg_player);
             this.Controls.Add(this.btn_addplayer);
@@ -219,7 +275,6 @@
             this.Name = "joueurs";
             this.Text = "Joueurs contre Joueurs";
             ((System.ComponentModel.ISupportInitialize)(this.dtg_player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_news)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,12 +286,20 @@
         private MetroFramework.Controls.MetroButton btn_addplayer;
         private MetroFramework.Controls.MetroGrid dtg_player;
         private MetroFramework.Controls.MetroButton btn_jouer;
-        private MetroFramework.Controls.MetroGrid dtg_news;
-        private System.Windows.Forms.DataGridViewLinkColumn titre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn description;
         private MetroFramework.Controls.MetroButton btn_statistique;
         private System.Windows.Forms.DataGridViewCheckBoxColumn selection;
         private System.Windows.Forms.DataGridViewTextBoxColumn nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn GagnerJouer;
+        private MetroFramework.Controls.MetroLabel lbl_nomJoueur;
+        private MetroFramework.Controls.MetroLabel lbl_ratioPourcentage;
+        private MetroFramework.Controls.MetroLabel lbl_ratio;
+        private MetroFramework.Controls.MetroLabel lbl_partieGagnees;
+        private MetroFramework.Controls.MetroLabel lbl_partiewin;
+        private MetroFramework.Controls.MetroLabel lbl_partieJouees;
+        private MetroFramework.Controls.MetroLabel lbl_partieplayed;
+        private MetroFramework.Controls.MetroLabel lbl_efficacitePoints;
+        private MetroFramework.Controls.MetroLabel lbl_efficacite;
+        private MetroFramework.Controls.MetroLabel lbl_precisionPourcentage;
+        private MetroFramework.Controls.MetroLabel lbl_precision;
     }
 }
