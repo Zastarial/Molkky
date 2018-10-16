@@ -20,13 +20,13 @@ namespace Molkky
 
         private void btn_solo_Click(object sender, EventArgs e)
         {
-            joueurs pvp = new joueurs();
+            Joueur pvp = new Joueur();
             pvp.Show();
         }
 
         private void btn_team_Click(object sender, EventArgs e)
         {
-            Equipes pvp = new Equipes();
+            Equipe pvp = new Equipe();
             pvp.Show();
         }
     }
