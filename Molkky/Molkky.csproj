@@ -68,6 +68,12 @@
     <Compile Include="Vues\Equipes.Designer.cs">
       <DependentUpon>Equipes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vues\NewsSync.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\NewsSync.Designer.cs">
+      <DependentUpon>NewsSync.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vues\joueurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vues\NewsSync.resx">
+      <DependentUpon>NewsSync.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vues\partie.resx">
       <DependentUpon>partie.cs</DependentUpon>
     </EmbeddedResource>
