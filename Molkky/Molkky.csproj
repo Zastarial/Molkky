@@ -65,34 +65,40 @@
     <Compile Include="Vues\Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vues\Equipe.cs">
+    <Compile Include="Vues\Equipes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Equipe.Designer.cs">
-      <DependentUpon>Equipe.cs</DependentUpon>
+    <Compile Include="Vues\Equipes.Designer.cs">
+      <DependentUpon>Equipes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vues\Joueur.cs">
+    <Compile Include="Vues\NewsSync.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Joueur.Designer.cs">
-      <DependentUpon>Joueur.cs</DependentUpon>
+    <Compile Include="Vues\NewsSync.Designer.cs">
+      <DependentUpon>NewsSync.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\joueurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\joueurs.Designer.cs">
+      <DependentUpon>joueurs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vues\Partie.cs">
+    <Compile Include="Vues\partie.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Partie.Designer.cs">
-      <DependentUpon>Partie.cs</DependentUpon>
+    <Compile Include="Vues\partie.Designer.cs">
+      <DependentUpon>partie.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Vues\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\Equipe.resx">
-      <DependentUpon>Equipe.cs</DependentUpon>
+    <EmbeddedResource Include="Vues\Equipes.resx">
+      <DependentUpon>Equipes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\Joueur.resx">
-      <DependentUpon>Joueur.cs</DependentUpon>
+    <EmbeddedResource Include="Vues\joueurs.resx">
+      <DependentUpon>joueurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,8 +110,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vues\Partie.resx">
-      <DependentUpon>Partie.cs</DependentUpon>
+    <EmbeddedResource Include="Vues\NewsSync.resx">
+      <DependentUpon>NewsSync.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\partie.resx">
+      <DependentUpon>partie.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config">
       <SubType>Designer</SubType>
