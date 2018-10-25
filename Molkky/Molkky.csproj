@@ -65,23 +65,23 @@
     <Compile Include="Vues\Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vues\Equipes.cs">
+    <Compile Include="Vues\Equipe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Equipes.Designer.cs">
-      <DependentUpon>Equipes.cs</DependentUpon>
+    <Compile Include="Vues\Equipe.Designer.cs">
+      <DependentUpon>Equipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\Joueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\Joueur.Designer.cs">
+      <DependentUpon>Joueur.cs</DependentUpon>
     </Compile>
     <Compile Include="Vues\NewsSync.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vues\NewsSync.Designer.cs">
       <DependentUpon>NewsSync.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vues\joueurs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vues\joueurs.Designer.cs">
-      <DependentUpon>joueurs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,11 +94,11 @@
     <EmbeddedResource Include="Vues\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\Equipes.resx">
-      <DependentUpon>Equipes.cs</DependentUpon>
+    <EmbeddedResource Include="Vues\Equipe.resx">
+      <DependentUpon>Equipe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\joueurs.resx">
-      <DependentUpon>joueurs.cs</DependentUpon>
+    <EmbeddedResource Include="Vues\Joueur.resx">
+      <DependentUpon>Joueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Molkky.Vues
 {
-    public partial class Partie : MetroFramework.Forms.MetroForm
+    public partial class Equipe : MetroFramework.Forms.MetroForm
     {
-        public Partie()
+        public Equipe()
         {
             InitializeComponent();
         }
