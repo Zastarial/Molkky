@@ -29,5 +29,11 @@ namespace Molkky
             Equipe pvp = new Equipe();
             pvp.Show();
         }
+
+        private void btn_newsSync_Click(object sender, EventArgs e)
+        {
+            NewsSync newsSync = new NewsSync();
+            newsSync.Show();
+        }
     }
 }

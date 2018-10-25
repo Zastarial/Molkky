@@ -33,14 +33,15 @@
             this.btn_team = new MetroFramework.Controls.MetroButton();
             this.tbx_rules = new System.Windows.Forms.RichTextBox();
             this.ptb_molkky = new System.Windows.Forms.PictureBox();
+            this.btn_newsSync = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_molkky)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_solo
             // 
-            this.btn_solo.Location = new System.Drawing.Point(102, 238);
+            this.btn_solo.Location = new System.Drawing.Point(23, 238);
             this.btn_solo.Name = "btn_solo";
-            this.btn_solo.Size = new System.Drawing.Size(126, 23);
+            this.btn_solo.Size = new System.Drawing.Size(200, 40);
             this.btn_solo.TabIndex = 0;
             this.btn_solo.Text = "Joueur contre Joueur";
             this.btn_solo.UseSelectable = true;
@@ -48,9 +49,9 @@
             // 
             // btn_team
             // 
-            this.btn_team.Location = new System.Drawing.Point(569, 238);
+            this.btn_team.Location = new System.Drawing.Point(577, 238);
             this.btn_team.Name = "btn_team";
-            this.btn_team.Size = new System.Drawing.Size(126, 23);
+            this.btn_team.Size = new System.Drawing.Size(200, 40);
             this.btn_team.TabIndex = 1;
             this.btn_team.Text = "Équipe contre Équipe";
             this.btn_team.UseSelectable = true;
@@ -74,11 +75,22 @@
             this.ptb_molkky.TabIndex = 4;
             this.ptb_molkky.TabStop = false;
             // 
+            // btn_newsSync
+            // 
+            this.btn_newsSync.Location = new System.Drawing.Point(293, 39);
+            this.btn_newsSync.Name = "btn_newsSync";
+            this.btn_newsSync.Size = new System.Drawing.Size(200, 40);
+            this.btn_newsSync.TabIndex = 5;
+            this.btn_newsSync.Text = "News et Synchronisation";
+            this.btn_newsSync.UseSelectable = true;
+            this.btn_newsSync.Click += new System.EventHandler(this.btn_newsSync_Click);
+            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.btn_newsSync);
             this.Controls.Add(this.ptb_molkky);
             this.Controls.Add(this.tbx_rules);
             this.Controls.Add(this.btn_team);
@@ -97,5 +109,6 @@
         private MetroFramework.Controls.MetroButton btn_team;
         private System.Windows.Forms.RichTextBox tbx_rules;
         private System.Windows.Forms.PictureBox ptb_molkky;
+        private MetroFramework.Controls.MetroButton btn_newsSync;
     }
 }
