@@ -10,5 +10,13 @@ namespace Molkky.Classes
     {
         int idEquipe;
         string nom;
+
+        public Equipe(string nom)
+        {
+            this.Nom = nom;
+        }
+
+        public int IdEquipe { get => idEquipe; set => idEquipe = value; }
+        public string Nom { get => nom; set => nom = value; }
     }
 }

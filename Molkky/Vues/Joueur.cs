@@ -15,6 +15,7 @@ namespace Molkky.Vues
         public Joueur()
         {
             InitializeComponent();
+            
         }
     }
 }
