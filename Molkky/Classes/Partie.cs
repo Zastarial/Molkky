@@ -8,7 +8,6 @@ namespace Molkky.Classes
 {
     class Partie
     {
-        int idPartie;
         Boolean typePartie;
 
         public Partie(bool typePartie)
@@ -16,7 +15,7 @@ namespace Molkky.Classes
             this.TypePartie = typePartie;
         }
 
-        public int IdPartie { get => idPartie; set => idPartie = value; }
+        
         public bool TypePartie { get => typePartie; set => typePartie = value; }
     }
 }
