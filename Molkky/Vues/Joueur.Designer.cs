@@ -65,16 +65,16 @@
             // lbl_ratioPourcentage
             // 
             this.lbl_ratioPourcentage.AutoSize = true;
-            this.lbl_ratioPourcentage.Location = new System.Drawing.Point(548, 456);
+            this.lbl_ratioPourcentage.Location = new System.Drawing.Point(400, 482);
             this.lbl_ratioPourcentage.Name = "lbl_ratioPourcentage";
-            this.lbl_ratioPourcentage.Size = new System.Drawing.Size(34, 19);
+            this.lbl_ratioPourcentage.Size = new System.Drawing.Size(51, 19);
             this.lbl_ratioPourcentage.TabIndex = 73;
-            this.lbl_ratioPourcentage.Text = "70%";
+            this.lbl_ratioPourcentage.Text = "winrate";
             // 
             // lbl_ratio
             // 
             this.lbl_ratio.AutoSize = true;
-            this.lbl_ratio.Location = new System.Drawing.Point(428, 456);
+            this.lbl_ratio.Location = new System.Drawing.Point(283, 482);
             this.lbl_ratio.Name = "lbl_ratio";
             this.lbl_ratio.Size = new System.Drawing.Size(111, 19);
             this.lbl_ratio.TabIndex = 72;
@@ -83,16 +83,16 @@
             // lbl_partieGagnees
             // 
             this.lbl_partieGagnees.AutoSize = true;
-            this.lbl_partieGagnees.Location = new System.Drawing.Point(243, 470);
+            this.lbl_partieGagnees.Location = new System.Drawing.Point(400, 454);
             this.lbl_partieGagnees.Name = "lbl_partieGagnees";
-            this.lbl_partieGagnees.Size = new System.Drawing.Size(179, 19);
+            this.lbl_partieGagnees.Size = new System.Drawing.Size(124, 19);
             this.lbl_partieGagnees.TabIndex = 71;
-            this.lbl_partieGagnees.Text = "*nombre de partie gagnées*";
+            this.lbl_partieGagnees.Text = "totalPartiesGagnées";
             // 
             // lbl_partiewin
             // 
             this.lbl_partiewin.AutoSize = true;
-            this.lbl_partiewin.Location = new System.Drawing.Point(117, 470);
+            this.lbl_partiewin.Location = new System.Drawing.Point(286, 454);
             this.lbl_partiewin.Name = "lbl_partiewin";
             this.lbl_partiewin.Size = new System.Drawing.Size(108, 19);
             this.lbl_partiewin.TabIndex = 70;
@@ -101,16 +101,16 @@
             // lbl_partieJouees
             // 
             this.lbl_partieJouees.AutoSize = true;
-            this.lbl_partieJouees.Location = new System.Drawing.Point(243, 440);
+            this.lbl_partieJouees.Location = new System.Drawing.Point(400, 424);
             this.lbl_partieJouees.Name = "lbl_partieJouees";
-            this.lbl_partieJouees.Size = new System.Drawing.Size(172, 19);
+            this.lbl_partieJouees.Size = new System.Drawing.Size(113, 19);
             this.lbl_partieJouees.TabIndex = 69;
-            this.lbl_partieJouees.Text = "*nombre de parties jouées*";
+            this.lbl_partieJouees.Text = "totalPartiesJouées";
             // 
             // lbl_partieplayed
             // 
             this.lbl_partieplayed.AutoSize = true;
-            this.lbl_partieplayed.Location = new System.Drawing.Point(117, 440);
+            this.lbl_partieplayed.Location = new System.Drawing.Point(298, 424);
             this.lbl_partieplayed.Name = "lbl_partieplayed";
             this.lbl_partieplayed.Size = new System.Drawing.Size(96, 19);
             this.lbl_partieplayed.TabIndex = 68;
@@ -119,25 +119,25 @@
             // lbl_efficacitePoints
             // 
             this.lbl_efficacitePoints.AutoSize = true;
-            this.lbl_efficacitePoints.Location = new System.Drawing.Point(243, 393);
+            this.lbl_efficacitePoints.Location = new System.Drawing.Point(400, 393);
             this.lbl_efficacitePoints.Name = "lbl_efficacitePoints";
-            this.lbl_efficacitePoints.Size = new System.Drawing.Size(155, 19);
+            this.lbl_efficacitePoints.Size = new System.Drawing.Size(41, 19);
             this.lbl_efficacitePoints.TabIndex = 67;
-            this.lbl_efficacitePoints.Text = "*nombre de points*/tour";
+            this.lbl_efficacitePoints.Text = "calcul";
             // 
             // lbl_efficacite
             // 
             this.lbl_efficacite.AutoSize = true;
-            this.lbl_efficacite.Location = new System.Drawing.Point(117, 393);
+            this.lbl_efficacite.Location = new System.Drawing.Point(111, 393);
             this.lbl_efficacite.Name = "lbl_efficacite";
-            this.lbl_efficacite.Size = new System.Drawing.Size(67, 19);
+            this.lbl_efficacite.Size = new System.Drawing.Size(283, 19);
             this.lbl_efficacite.TabIndex = 66;
-            this.lbl_efficacite.Text = "Efficacité :";
+            this.lbl_efficacite.Text = "Efficacité (Nombre moyen de points par tour) :";
             // 
             // lbl_precisionPourcentage
             // 
             this.lbl_precisionPourcentage.AutoSize = true;
-            this.lbl_precisionPourcentage.Location = new System.Drawing.Point(243, 363);
+            this.lbl_precisionPourcentage.Location = new System.Drawing.Point(400, 363);
             this.lbl_precisionPourcentage.Name = "lbl_precisionPourcentage";
             this.lbl_precisionPourcentage.Size = new System.Drawing.Size(34, 19);
             this.lbl_precisionPourcentage.TabIndex = 65;
@@ -146,7 +146,7 @@
             // lbl_precision
             // 
             this.lbl_precision.AutoSize = true;
-            this.lbl_precision.Location = new System.Drawing.Point(117, 363);
+            this.lbl_precision.Location = new System.Drawing.Point(271, 363);
             this.lbl_precision.Name = "lbl_precision";
             this.lbl_precision.Size = new System.Drawing.Size(123, 19);
             this.lbl_precision.TabIndex = 64;

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_ptsSolo = new MetroFramework.Controls.MetroLabel();
             this.lbl_precisionPourcentage = new MetroFramework.Controls.MetroLabel();
             this.lbl_precision = new MetroFramework.Controls.MetroLabel();
@@ -39,7 +39,6 @@
             this.lbl_ptsRestant = new MetroFramework.Controls.MetroLabel();
             this.lbl_tourJoueur = new MetroFramework.Controls.MetroLabel();
             this.pgrbar_score = new MetroFramework.Controls.MetroProgressBar();
-            this.ptb_0 = new System.Windows.Forms.PictureBox();
             this.lbl_joueurEfficacePlus = new MetroFramework.Controls.MetroLabel();
             this.lbl_efficaceMoins = new MetroFramework.Controls.MetroLabel();
             this.lbl_joueurEfficaceMoins = new MetroFramework.Controls.MetroLabel();
@@ -60,7 +59,6 @@
             this.ptb_3 = new System.Windows.Forms.PictureBox();
             this.ptb_2 = new System.Windows.Forms.PictureBox();
             this.ptb_1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_quilles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_11)).BeginInit();
@@ -148,15 +146,6 @@
             this.pgrbar_score.Step = 1;
             this.pgrbar_score.TabIndex = 47;
             // 
-            // ptb_0
-            // 
-            this.ptb_0.Image = global::Molkky.Properties.Resources._0;
-            this.ptb_0.Location = new System.Drawing.Point(168, 564);
-            this.ptb_0.Name = "ptb_0";
-            this.ptb_0.Size = new System.Drawing.Size(48, 66);
-            this.ptb_0.TabIndex = 46;
-            this.ptb_0.TabStop = false;
-            // 
             // lbl_joueurEfficacePlus
             // 
             this.lbl_joueurEfficacePlus.AutoSize = true;
@@ -200,40 +189,40 @@
             this.dtg_quilles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtg_quilles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dtg_quilles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_quilles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_quilles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dtg_quilles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_quilles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tombees,
             this.supprimer});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_quilles.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtg_quilles.DefaultCellStyle = dataGridViewCellStyle8;
             this.dtg_quilles.EnableHeadersVisualStyles = false;
             this.dtg_quilles.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtg_quilles.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtg_quilles.Location = new System.Drawing.Point(483, 344);
             this.dtg_quilles.Name = "dtg_quilles";
             this.dtg_quilles.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_quilles.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtg_quilles.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dtg_quilles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dtg_quilles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtg_quilles.Size = new System.Drawing.Size(243, 150);
@@ -307,6 +296,7 @@
             // 
             // ptb_7
             // 
+            this.ptb_7.BackColor = System.Drawing.Color.White;
             this.ptb_7.Image = global::Molkky.Properties.Resources._7;
             this.ptb_7.Location = new System.Drawing.Point(230, 344);
             this.ptb_7.Name = "ptb_7";
@@ -381,7 +371,6 @@
             this.Controls.Add(this.lbl_ptsRestant);
             this.Controls.Add(this.lbl_tourJoueur);
             this.Controls.Add(this.pgrbar_score);
-            this.Controls.Add(this.ptb_0);
             this.Controls.Add(this.lbl_joueurEfficacePlus);
             this.Controls.Add(this.lbl_efficaceMoins);
             this.Controls.Add(this.lbl_joueurEfficaceMoins);
@@ -402,7 +391,6 @@
             this.Controls.Add(this.ptb_1);
             this.Name = "Partie";
             this.Text = "Leikki";
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_quilles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_11)).EndInit();
@@ -431,7 +419,6 @@
         private MetroFramework.Controls.MetroLabel lbl_ptsRestant;
         private MetroFramework.Controls.MetroLabel lbl_tourJoueur;
         private MetroFramework.Controls.MetroProgressBar pgrbar_score;
-        private System.Windows.Forms.PictureBox ptb_0;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficacePlus;
         private MetroFramework.Controls.MetroLabel lbl_efficaceMoins;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficaceMoins;

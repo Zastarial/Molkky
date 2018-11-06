@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Molkky.Classes
 {
     public class Joueur
-    {       
+    {
 
         public Joueur(string nomJoueur)
         {
