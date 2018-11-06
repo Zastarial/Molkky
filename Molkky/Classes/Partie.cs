@@ -8,14 +8,19 @@ namespace Molkky.Classes
 {
     class Partie
     {
-        Boolean typePartie;
+        private int numPartie;
+        private DateTime dateDebutPartie;
+        private DateTime dateFinPartie;
 
-        public Partie(bool typePartie)
+        public Partie(int numPartie, DateTime dateDebutPartie, DateTime dateFinPartie)
         {
-            this.TypePartie = typePartie;
+            this.NumPartie = numPartie;
+            this.DateDebutPartie = dateDebutPartie;
+            this.DateFinPartie = dateFinPartie;
         }
 
-        
-        public bool TypePartie { get => typePartie; set => typePartie = value; }
+        public int NumPartie { get => numPartie; set => numPartie = value; }
+        public DateTime DateDebutPartie { get => dateDebutPartie; set => dateDebutPartie = value; }
+        public DateTime DateFinPartie { get => dateFinPartie; set => dateFinPartie = value; }
     }
 }

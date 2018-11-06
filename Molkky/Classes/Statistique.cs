@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 
 namespace Molkky.Classes
 {
-    public class Statistique : Joueur
+    public class Statistique
     {
+        int idStatistique;
+        int meilleurMoyenne;
+        string joueurPlusPrecis;
+        string meilleurJoueur;
 
-        public Statistique(int precision, int efficacite, int ratio, string nomJoueur) : base(nomJoueur)
+        public Statistique(int idStatistique, int meilleurMoyenne, string joueurPlusPrecis, string meilleurJoueur)
         {
-            this.precision = precision;
-            this.efficacite = efficacite;
-            this.ratio = ratio;
-            
+            this.IdStatistique = idStatistique;
+            this.MeilleurMoyenne = meilleurMoyenne;
+            this.JoueurPlusPrecis = joueurPlusPrecis;
+            this.MeilleurJoueur = meilleurJoueur;
         }
 
-        public int precision { get => precision; set => precision = value; }
-        public int efficacite { get => efficacite; set => efficacite = value; }
-        public int ratio { get => ratio; set => ratio = value; }
+        public int IdStatistique { get => idStatistique; set => idStatistique = value; }
+        public int MeilleurMoyenne { get => meilleurMoyenne; set => meilleurMoyenne = value; }
+        public string JoueurPlusPrecis { get => joueurPlusPrecis; set => joueurPlusPrecis = value; }
+        public string MeilleurJoueur { get => meilleurJoueur; set => meilleurJoueur = value; }
     }
 }

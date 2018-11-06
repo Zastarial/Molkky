@@ -58,10 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Equipe.cs" />
     <Compile Include="Classes\Joueur.cs" />
+    <Compile Include="Classes\Lancer.cs" />
     <Compile Include="Classes\Partie.cs" />
     <Compile Include="Classes\Statistique.cs" />
+    <Compile Include="Classes\StatistiqueJoueur.cs" />
     <Compile Include="Vues\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>

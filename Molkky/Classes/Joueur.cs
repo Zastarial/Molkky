@@ -7,18 +7,14 @@ using System.Threading.Tasks;
 namespace Molkky.Classes
 {
     public class Joueur
-    {       
-       private string nomJoueur;
-        private int partieGagnee;
-        private int partieJouee;
+    {
+        private string pseudoJoueur;
 
-        public Joueur(string nomJoueur)
+        public Joueur(string pseudoJoueur)
         {
-            NomJoueur = nomJoueur;
+            this.PseudoJoueur = pseudoJoueur;
         }
 
-        public string NomJoueur { get => nomJoueur; set => nomJoueur = value; }
-        public int PartieGagnee { get => partieGagnee; set => partieGagnee = value; }
-        public int PartieJouee { get => partieJouee; set => partieJouee = value; }
+        public string PseudoJoueur { get => pseudoJoueur; set => pseudoJoueur = value; }
     }
 }
