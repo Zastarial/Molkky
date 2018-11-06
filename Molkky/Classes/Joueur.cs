@@ -8,16 +8,17 @@ namespace Molkky.Classes
 {
     public class Joueur
     {       
+       private string nomJoueur;
+        private int partieGagnee;
+        private int partieJouee;
 
         public Joueur(string nomJoueur)
         {
-            this.nomJoueur = nomJoueur;
+            NomJoueur = nomJoueur;
         }
 
-         
-        public string nomJoueur { get => nomJoueur; set => nomJoueur = value; }
-        public int partieGagnee { get => partieGagnee; set => partieGagnee = value; }
-        public int partieJouee { get => partieJouee; set => partieJouee = value; }
-        
+        public string NomJoueur { get => nomJoueur; set => nomJoueur = value; }
+        public int PartieGagnee { get => partieGagnee; set => partieGagnee = value; }
+        public int PartieJouee { get => partieJouee; set => partieJouee = value; }
     }
 }

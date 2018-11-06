@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_ptsSolo = new MetroFramework.Controls.MetroLabel();
             this.lbl_precisionPourcentage = new MetroFramework.Controls.MetroLabel();
             this.lbl_precision = new MetroFramework.Controls.MetroLabel();
@@ -39,14 +36,10 @@
             this.lbl_ptsRestant = new MetroFramework.Controls.MetroLabel();
             this.lbl_tourJoueur = new MetroFramework.Controls.MetroLabel();
             this.pgrbar_score = new MetroFramework.Controls.MetroProgressBar();
-            this.ptb_0 = new System.Windows.Forms.PictureBox();
             this.lbl_joueurEfficacePlus = new MetroFramework.Controls.MetroLabel();
             this.lbl_efficaceMoins = new MetroFramework.Controls.MetroLabel();
             this.lbl_joueurEfficaceMoins = new MetroFramework.Controls.MetroLabel();
             this.lbl_efficacePlus = new MetroFramework.Controls.MetroLabel();
-            this.dtg_quilles = new MetroFramework.Controls.MetroGrid();
-            this.tombees = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.supprimer = new System.Windows.Forms.DataGridViewButtonColumn();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.ptb_12 = new System.Windows.Forms.PictureBox();
             this.ptb_11 = new System.Windows.Forms.PictureBox();
@@ -60,8 +53,6 @@
             this.ptb_3 = new System.Windows.Forms.PictureBox();
             this.ptb_2 = new System.Windows.Forms.PictureBox();
             this.ptb_1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_quilles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_10)).BeginInit();
@@ -148,15 +139,6 @@
             this.pgrbar_score.Step = 1;
             this.pgrbar_score.TabIndex = 47;
             // 
-            // ptb_0
-            // 
-            this.ptb_0.Image = global::Molkky.Properties.Resources._0;
-            this.ptb_0.Location = new System.Drawing.Point(168, 564);
-            this.ptb_0.Name = "ptb_0";
-            this.ptb_0.Size = new System.Drawing.Size(48, 66);
-            this.ptb_0.TabIndex = 46;
-            this.ptb_0.TabStop = false;
-            // 
             // lbl_joueurEfficacePlus
             // 
             this.lbl_joueurEfficacePlus.AutoSize = true;
@@ -193,65 +175,9 @@
             this.lbl_efficacePlus.TabIndex = 42;
             this.lbl_efficacePlus.Text = "Joueur le plus efficace :";
             // 
-            // dtg_quilles
-            // 
-            this.dtg_quilles.AllowUserToResizeRows = false;
-            this.dtg_quilles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtg_quilles.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtg_quilles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dtg_quilles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_quilles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtg_quilles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_quilles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tombees,
-            this.supprimer});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtg_quilles.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtg_quilles.EnableHeadersVisualStyles = false;
-            this.dtg_quilles.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dtg_quilles.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtg_quilles.Location = new System.Drawing.Point(483, 344);
-            this.dtg_quilles.Name = "dtg_quilles";
-            this.dtg_quilles.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtg_quilles.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtg_quilles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dtg_quilles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtg_quilles.Size = new System.Drawing.Size(243, 150);
-            this.dtg_quilles.TabIndex = 41;
-            // 
-            // tombees
-            // 
-            this.tombees.HeaderText = "Quilles tombées";
-            this.tombees.Name = "tombees";
-            // 
-            // supprimer
-            // 
-            this.supprimer.HeaderText = "Supprimer la quille";
-            this.supprimer.Name = "supprimer";
-            // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(270, 607);
+            this.metroButton1.Location = new System.Drawing.Point(382, 602);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(75, 23);
             this.metroButton1.TabIndex = 40;
@@ -263,110 +189,123 @@
             this.ptb_12.BackColor = System.Drawing.Color.Transparent;
             this.ptb_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ptb_12.Image = global::Molkky.Properties.Resources._12;
-            this.ptb_12.Location = new System.Drawing.Point(261, 396);
+            this.ptb_12.Location = new System.Drawing.Point(373, 391);
             this.ptb_12.Name = "ptb_12";
             this.ptb_12.Size = new System.Drawing.Size(41, 46);
             this.ptb_12.TabIndex = 39;
             this.ptb_12.TabStop = false;
+            this.ptb_12.Click += new System.EventHandler(this.ptb_12_Click);
             // 
             // ptb_11
             // 
             this.ptb_11.Image = global::Molkky.Properties.Resources._11;
-            this.ptb_11.Location = new System.Drawing.Point(326, 396);
+            this.ptb_11.Location = new System.Drawing.Point(438, 391);
             this.ptb_11.Name = "ptb_11";
             this.ptb_11.Size = new System.Drawing.Size(42, 46);
             this.ptb_11.TabIndex = 38;
             this.ptb_11.TabStop = false;
+            this.ptb_11.Click += new System.EventHandler(this.ptb_11_Click);
             // 
             // ptb_10
             // 
             this.ptb_10.Image = global::Molkky.Properties.Resources._10;
-            this.ptb_10.Location = new System.Drawing.Point(295, 448);
+            this.ptb_10.Location = new System.Drawing.Point(407, 443);
             this.ptb_10.Name = "ptb_10";
             this.ptb_10.Size = new System.Drawing.Size(40, 46);
             this.ptb_10.TabIndex = 37;
             this.ptb_10.TabStop = false;
+            this.ptb_10.Click += new System.EventHandler(this.ptb_10_Click);
             // 
             // ptb_9
             // 
             this.ptb_9.Image = global::Molkky.Properties.Resources._9;
-            this.ptb_9.Location = new System.Drawing.Point(295, 344);
+            this.ptb_9.Location = new System.Drawing.Point(407, 339);
             this.ptb_9.Name = "ptb_9";
             this.ptb_9.Size = new System.Drawing.Size(41, 46);
             this.ptb_9.TabIndex = 36;
             this.ptb_9.TabStop = false;
+            this.ptb_9.Click += new System.EventHandler(this.ptb_9_Click);
             // 
             // ptb_8
             // 
             this.ptb_8.Image = global::Molkky.Properties.Resources._8;
-            this.ptb_8.Location = new System.Drawing.Point(355, 344);
+            this.ptb_8.Location = new System.Drawing.Point(467, 339);
             this.ptb_8.Name = "ptb_8";
             this.ptb_8.Size = new System.Drawing.Size(42, 46);
             this.ptb_8.TabIndex = 35;
             this.ptb_8.TabStop = false;
+            this.ptb_8.Click += new System.EventHandler(this.ptb_8_Click);
             // 
             // ptb_7
             // 
+            this.ptb_7.BackColor = System.Drawing.Color.White;
             this.ptb_7.Image = global::Molkky.Properties.Resources._7;
-            this.ptb_7.Location = new System.Drawing.Point(230, 344);
+            this.ptb_7.Location = new System.Drawing.Point(342, 339);
             this.ptb_7.Name = "ptb_7";
             this.ptb_7.Size = new System.Drawing.Size(41, 46);
             this.ptb_7.TabIndex = 34;
             this.ptb_7.TabStop = false;
+            this.ptb_7.Click += new System.EventHandler(this.ptb_7_Click);
             // 
             // ptb_6
             // 
             this.ptb_6.Image = global::Molkky.Properties.Resources._6;
-            this.ptb_6.Location = new System.Drawing.Point(388, 396);
+            this.ptb_6.Location = new System.Drawing.Point(500, 391);
             this.ptb_6.Name = "ptb_6";
             this.ptb_6.Size = new System.Drawing.Size(42, 46);
             this.ptb_6.TabIndex = 33;
             this.ptb_6.TabStop = false;
+            this.ptb_6.Click += new System.EventHandler(this.ptb_6_Click);
             // 
             // ptb_5
             // 
             this.ptb_5.Image = global::Molkky.Properties.Resources._5;
-            this.ptb_5.Location = new System.Drawing.Point(199, 396);
+            this.ptb_5.Location = new System.Drawing.Point(311, 391);
             this.ptb_5.Name = "ptb_5";
             this.ptb_5.Size = new System.Drawing.Size(42, 46);
             this.ptb_5.TabIndex = 32;
             this.ptb_5.TabStop = false;
+            this.ptb_5.Click += new System.EventHandler(this.ptb_5_Click);
             // 
             // ptb_4
             // 
             this.ptb_4.Image = global::Molkky.Properties.Resources._4;
-            this.ptb_4.Location = new System.Drawing.Point(355, 448);
+            this.ptb_4.Location = new System.Drawing.Point(467, 443);
             this.ptb_4.Name = "ptb_4";
             this.ptb_4.Size = new System.Drawing.Size(41, 46);
             this.ptb_4.TabIndex = 31;
             this.ptb_4.TabStop = false;
+            this.ptb_4.Click += new System.EventHandler(this.ptb_4_Click);
             // 
             // ptb_3
             // 
             this.ptb_3.Image = global::Molkky.Properties.Resources._3;
-            this.ptb_3.Location = new System.Drawing.Point(230, 448);
+            this.ptb_3.Location = new System.Drawing.Point(342, 443);
             this.ptb_3.Name = "ptb_3";
             this.ptb_3.Size = new System.Drawing.Size(41, 46);
             this.ptb_3.TabIndex = 30;
             this.ptb_3.TabStop = false;
+            this.ptb_3.Click += new System.EventHandler(this.ptb_3_Click);
             // 
             // ptb_2
             // 
             this.ptb_2.Image = global::Molkky.Properties.Resources._2;
-            this.ptb_2.Location = new System.Drawing.Point(317, 500);
+            this.ptb_2.Location = new System.Drawing.Point(429, 495);
             this.ptb_2.Name = "ptb_2";
             this.ptb_2.Size = new System.Drawing.Size(41, 46);
             this.ptb_2.TabIndex = 29;
             this.ptb_2.TabStop = false;
+            this.ptb_2.Click += new System.EventHandler(this.ptb_2_Click);
             // 
             // ptb_1
             // 
             this.ptb_1.Image = global::Molkky.Properties.Resources._1;
-            this.ptb_1.Location = new System.Drawing.Point(270, 500);
+            this.ptb_1.Location = new System.Drawing.Point(382, 495);
             this.ptb_1.Name = "ptb_1";
             this.ptb_1.Size = new System.Drawing.Size(41, 46);
             this.ptb_1.TabIndex = 28;
             this.ptb_1.TabStop = false;
+            this.ptb_1.Click += new System.EventHandler(this.ptb_1_Click);
             // 
             // Partie
             // 
@@ -381,12 +320,10 @@
             this.Controls.Add(this.lbl_ptsRestant);
             this.Controls.Add(this.lbl_tourJoueur);
             this.Controls.Add(this.pgrbar_score);
-            this.Controls.Add(this.ptb_0);
             this.Controls.Add(this.lbl_joueurEfficacePlus);
             this.Controls.Add(this.lbl_efficaceMoins);
             this.Controls.Add(this.lbl_joueurEfficaceMoins);
             this.Controls.Add(this.lbl_efficacePlus);
-            this.Controls.Add(this.dtg_quilles);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.ptb_12);
             this.Controls.Add(this.ptb_11);
@@ -402,8 +339,6 @@
             this.Controls.Add(this.ptb_1);
             this.Name = "Partie";
             this.Text = "Leikki";
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_quilles)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_10)).EndInit();
@@ -431,14 +366,10 @@
         private MetroFramework.Controls.MetroLabel lbl_ptsRestant;
         private MetroFramework.Controls.MetroLabel lbl_tourJoueur;
         private MetroFramework.Controls.MetroProgressBar pgrbar_score;
-        private System.Windows.Forms.PictureBox ptb_0;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficacePlus;
         private MetroFramework.Controls.MetroLabel lbl_efficaceMoins;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficaceMoins;
         private MetroFramework.Controls.MetroLabel lbl_efficacePlus;
-        private MetroFramework.Controls.MetroGrid dtg_quilles;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tombees;
-        private System.Windows.Forms.DataGridViewButtonColumn supprimer;
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.PictureBox ptb_12;
         private System.Windows.Forms.PictureBox ptb_11;

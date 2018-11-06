@@ -169,6 +169,7 @@
             this.btn_jouer.TabIndex = 62;
             this.btn_jouer.Text = "C\'est Parti !";
             this.btn_jouer.UseSelectable = true;
+            this.btn_jouer.Click += new System.EventHandler(this.btn_jouer_Click);
             // 
             // dtg_player
             // 
@@ -240,6 +241,7 @@
             this.btn_addplayer.TabIndex = 60;
             this.btn_addplayer.Text = "Ajouter";
             this.btn_addplayer.UseSelectable = true;
+            this.btn_addplayer.Click += new System.EventHandler(this.btn_addplayer_Click);
             // 
             // tbx_name
             // 
