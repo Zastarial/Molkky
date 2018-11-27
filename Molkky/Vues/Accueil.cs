@@ -26,8 +26,8 @@ namespace Molkky
 
         private void btn_team_Click(object sender, EventArgs e)
         {
-            Equipe pvp = new Equipe();
-            pvp.Show();
+            //Equipe pvp = new Equipe();
+            //pvp.Show();
         }
 
         private void btn_newsSync_Click(object sender, EventArgs e)
