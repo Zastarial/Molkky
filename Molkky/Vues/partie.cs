@@ -7,15 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace Molkky.Vues
 {
     public partial class Partie : MetroFramework.Forms.MetroForm
     {
         public Partie()
-        {
+
+        { 
             InitializeComponent();
+
+
+            using (StreamReader file = File.OpenText(@"C:\BTS SIO\Molkky\joueur.json"))
+            {
+
+                JsonSerializer serializer = new JsonSerializer();
+                List<Classes.Joueur> jsonJoueur = (List<Classes.Joueur>)serializer.Deserialize(file, typeof(List<Classes.Joueur>));
+                lbl_tourJoueur.Text = jsonJoueur.ToString();
+
+                foreach (Classes.Joueur j in jsonJoueur)
+                {
+                    Console.WriteLine(j.PseudoJoueur);
+
+                }
+            }
         }
+
 
         private void ptb_1_Click(object sender, EventArgs e)
         {

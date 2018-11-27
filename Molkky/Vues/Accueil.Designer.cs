@@ -49,12 +49,13 @@
             // 
             // btn_team
             // 
-            this.btn_team.Location = new System.Drawing.Point(577, 238);
+            this.btn_team.Location = new System.Drawing.Point(293, 40);
             this.btn_team.Name = "btn_team";
             this.btn_team.Size = new System.Drawing.Size(200, 40);
             this.btn_team.TabIndex = 1;
             this.btn_team.Text = "Équipe contre Équipe";
             this.btn_team.UseSelectable = true;
+            this.btn_team.Visible = false;
             this.btn_team.Click += new System.EventHandler(this.btn_team_Click);
             // 
             // tbx_rules
@@ -77,7 +78,7 @@
             // 
             // btn_newsSync
             // 
-            this.btn_newsSync.Location = new System.Drawing.Point(293, 39);
+            this.btn_newsSync.Location = new System.Drawing.Point(577, 238);
             this.btn_newsSync.Name = "btn_newsSync";
             this.btn_newsSync.Size = new System.Drawing.Size(200, 40);
             this.btn_newsSync.TabIndex = 5;

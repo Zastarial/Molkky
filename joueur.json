@@ -1,1 +1,28 @@
-{"NomJoueur":"Nom du joueur","PartieGagnee":0,"PartieJouee":0}
+[
+  {
+    "PseudoJoueur": "Menethil",
+    "Statistique": null
+  },
+  {
+    "PseudoJoueur": "Arthas",
+    "Statistique": null
+  }
+][
+  {
+    "PseudoJoueur": "Hurlenfer",
+    "Statistique": null
+  },
+  {
+    "PseudoJoueur": "Garrosh",
+    "Statistique": null
+  }
+][][
+  {
+    "PseudoJoueur": "Valjean",
+    "Statistique": null
+  },
+  {
+    "PseudoJoueur": "Jean",
+    "Statistique": null
+  }
+]

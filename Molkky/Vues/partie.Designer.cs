@@ -34,7 +34,7 @@
             this.lbl_rate = new MetroFramework.Controls.MetroLabel();
             this.lbl_nbRate = new MetroFramework.Controls.MetroLabel();
             this.lbl_ptsRestant = new MetroFramework.Controls.MetroLabel();
-            this.lbl_tourJoueur = new MetroFramework.Controls.MetroLabel();
+            this.lbl_tour = new MetroFramework.Controls.MetroLabel();
             this.pgrbar_score = new MetroFramework.Controls.MetroProgressBar();
             this.lbl_joueurEfficacePlus = new MetroFramework.Controls.MetroLabel();
             this.lbl_efficaceMoins = new MetroFramework.Controls.MetroLabel();
@@ -53,6 +53,7 @@
             this.ptb_3 = new System.Windows.Forms.PictureBox();
             this.ptb_2 = new System.Windows.Forms.PictureBox();
             this.ptb_1 = new System.Windows.Forms.PictureBox();
+            this.lbl_tourJoueur = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_10)).BeginInit();
@@ -121,14 +122,14 @@
             this.lbl_ptsRestant.TabIndex = 49;
             this.lbl_ptsRestant.Text = "*points marqué restant*/50";
             // 
-            // lbl_tourJoueur
+            // lbl_tour
             // 
-            this.lbl_tourJoueur.AutoSize = true;
-            this.lbl_tourJoueur.Location = new System.Drawing.Point(72, 122);
-            this.lbl_tourJoueur.Name = "lbl_tourJoueur";
-            this.lbl_tourJoueur.Size = new System.Drawing.Size(347, 19);
-            this.lbl_tourJoueur.TabIndex = 48;
-            this.lbl_tourJoueur.Text = "Au tour du joueur *nom du joueur* (*nom de l\'équipe*)  :";
+            this.lbl_tour.AutoSize = true;
+            this.lbl_tour.Location = new System.Drawing.Point(72, 122);
+            this.lbl_tour.Name = "lbl_tour";
+            this.lbl_tour.Size = new System.Drawing.Size(120, 19);
+            this.lbl_tour.TabIndex = 48;
+            this.lbl_tour.Text = "Au tour du joueur :";
             // 
             // pgrbar_score
             // 
@@ -307,18 +308,28 @@
             this.ptb_1.TabStop = false;
             this.ptb_1.Click += new System.EventHandler(this.ptb_1_Click);
             // 
+            // lbl_tourJoueur
+            // 
+            this.lbl_tourJoueur.AutoSize = true;
+            this.lbl_tourJoueur.Location = new System.Drawing.Point(252, 122);
+            this.lbl_tourJoueur.Name = "lbl_tourJoueur";
+            this.lbl_tourJoueur.Size = new System.Drawing.Size(108, 19);
+            this.lbl_tourJoueur.TabIndex = 55;
+            this.lbl_tourJoueur.Text = "*nom du joueur*";
+            // 
             // Partie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
+            this.Controls.Add(this.lbl_tourJoueur);
             this.Controls.Add(this.lbl_ptsSolo);
             this.Controls.Add(this.lbl_precisionPourcentage);
             this.Controls.Add(this.lbl_precision);
             this.Controls.Add(this.lbl_rate);
             this.Controls.Add(this.lbl_nbRate);
             this.Controls.Add(this.lbl_ptsRestant);
-            this.Controls.Add(this.lbl_tourJoueur);
+            this.Controls.Add(this.lbl_tour);
             this.Controls.Add(this.pgrbar_score);
             this.Controls.Add(this.lbl_joueurEfficacePlus);
             this.Controls.Add(this.lbl_efficaceMoins);
@@ -364,7 +375,7 @@
         private MetroFramework.Controls.MetroLabel lbl_rate;
         private MetroFramework.Controls.MetroLabel lbl_nbRate;
         private MetroFramework.Controls.MetroLabel lbl_ptsRestant;
-        private MetroFramework.Controls.MetroLabel lbl_tourJoueur;
+        private MetroFramework.Controls.MetroLabel lbl_tour;
         private MetroFramework.Controls.MetroProgressBar pgrbar_score;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficacePlus;
         private MetroFramework.Controls.MetroLabel lbl_efficaceMoins;
@@ -383,5 +394,6 @@
         private System.Windows.Forms.PictureBox ptb_3;
         private System.Windows.Forms.PictureBox ptb_2;
         private System.Windows.Forms.PictureBox ptb_1;
+        private MetroFramework.Controls.MetroLabel lbl_tourJoueur;
     }
 }

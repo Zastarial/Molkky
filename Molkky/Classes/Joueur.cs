@@ -9,6 +9,7 @@ namespace Molkky.Classes
     public class Joueur
     {
         private string pseudoJoueur;
+        private List<StatistiqueJoueur> statistiqueJoueurs;
 
         public Joueur(string pseudoJoueur)
         {
@@ -16,5 +17,6 @@ namespace Molkky.Classes
         }
 
         public string PseudoJoueur { get => pseudoJoueur; set => pseudoJoueur = value; }
+        internal List<StatistiqueJoueur> StatistiqueJoueurs { get => statistiqueJoueurs; set => statistiqueJoueurs = value; }
     }
 }
