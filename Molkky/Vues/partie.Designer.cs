@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_ptsSolo = new MetroFramework.Controls.MetroLabel();
+            this.lbl_ptsRestant = new MetroFramework.Controls.MetroLabel();
             this.lbl_precisionPourcentage = new MetroFramework.Controls.MetroLabel();
             this.lbl_precision = new MetroFramework.Controls.MetroLabel();
             this.lbl_rate = new MetroFramework.Controls.MetroLabel();
             this.lbl_nbRate = new MetroFramework.Controls.MetroLabel();
-            this.lbl_ptsRestant = new MetroFramework.Controls.MetroLabel();
+            this.lbl_ptsMarque = new MetroFramework.Controls.MetroLabel();
             this.lbl_tour = new MetroFramework.Controls.MetroLabel();
             this.pgrbar_score = new MetroFramework.Controls.MetroProgressBar();
             this.lbl_joueurEfficacePlus = new MetroFramework.Controls.MetroLabel();
             this.lbl_efficaceMoins = new MetroFramework.Controls.MetroLabel();
             this.lbl_joueurEfficaceMoins = new MetroFramework.Controls.MetroLabel();
             this.lbl_efficacePlus = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.btn_score = new MetroFramework.Controls.MetroButton();
             this.ptb_12 = new System.Windows.Forms.PictureBox();
             this.ptb_11 = new System.Windows.Forms.PictureBox();
             this.ptb_10 = new System.Windows.Forms.PictureBox();
@@ -53,7 +53,10 @@
             this.ptb_3 = new System.Windows.Forms.PictureBox();
             this.ptb_2 = new System.Windows.Forms.PictureBox();
             this.ptb_1 = new System.Windows.Forms.PictureBox();
-            this.lbl_tourJoueur = new MetroFramework.Controls.MetroLabel();
+            this.lbl_50 = new MetroFramework.Controls.MetroLabel();
+            this.lbl_501 = new MetroFramework.Controls.MetroLabel();
+            this.panelJeu = new System.Windows.Forms.Panel();
+            this.lblJoueur = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_10)).BeginInit();
@@ -66,16 +69,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_1)).BeginInit();
+            this.panelJeu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lbl_ptsSolo
+            // lbl_ptsRestant
             // 
-            this.lbl_ptsSolo.AutoSize = true;
-            this.lbl_ptsSolo.Location = new System.Drawing.Point(435, 170);
-            this.lbl_ptsSolo.Name = "lbl_ptsSolo";
-            this.lbl_ptsSolo.Size = new System.Drawing.Size(291, 19);
-            this.lbl_ptsSolo.TabIndex = 54;
-            this.lbl_ptsSolo.Text = "Points marqués en solo : *nombre de points*/50";
+            this.lbl_ptsRestant.AutoSize = true;
+            this.lbl_ptsRestant.Location = new System.Drawing.Point(435, 170);
+            this.lbl_ptsRestant.Name = "lbl_ptsRestant";
+            this.lbl_ptsRestant.Size = new System.Drawing.Size(91, 19);
+            this.lbl_ptsRestant.TabIndex = 54;
+            this.lbl_ptsRestant.Text = "Points restants";
             // 
             // lbl_precisionPourcentage
             // 
@@ -113,23 +117,23 @@
             this.lbl_nbRate.TabIndex = 50;
             this.lbl_nbRate.Text = "Coups ratés :";
             // 
-            // lbl_ptsRestant
+            // lbl_ptsMarque
             // 
-            this.lbl_ptsRestant.AutoSize = true;
-            this.lbl_ptsRestant.Location = new System.Drawing.Point(234, 170);
-            this.lbl_ptsRestant.Name = "lbl_ptsRestant";
-            this.lbl_ptsRestant.Size = new System.Drawing.Size(168, 19);
-            this.lbl_ptsRestant.TabIndex = 49;
-            this.lbl_ptsRestant.Text = "*points marqué restant*/50";
+            this.lbl_ptsMarque.AutoSize = true;
+            this.lbl_ptsMarque.Location = new System.Drawing.Point(234, 170);
+            this.lbl_ptsMarque.Name = "lbl_ptsMarque";
+            this.lbl_ptsMarque.Size = new System.Drawing.Size(98, 19);
+            this.lbl_ptsMarque.TabIndex = 49;
+            this.lbl_ptsMarque.Text = "Points marqués";
             // 
             // lbl_tour
             // 
             this.lbl_tour.AutoSize = true;
             this.lbl_tour.Location = new System.Drawing.Point(72, 122);
             this.lbl_tour.Name = "lbl_tour";
-            this.lbl_tour.Size = new System.Drawing.Size(120, 19);
+            this.lbl_tour.Size = new System.Drawing.Size(113, 19);
             this.lbl_tour.TabIndex = 48;
-            this.lbl_tour.Text = "Au tour du joueur :";
+            this.lbl_tour.Text = "Au tour du joueur";
             // 
             // pgrbar_score
             // 
@@ -176,178 +180,207 @@
             this.lbl_efficacePlus.TabIndex = 42;
             this.lbl_efficacePlus.Text = "Joueur le plus efficace :";
             // 
-            // metroButton1
+            // btn_score
             // 
-            this.metroButton1.Location = new System.Drawing.Point(382, 602);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 40;
-            this.metroButton1.Text = "Scorez !";
-            this.metroButton1.UseSelectable = true;
+            this.btn_score.Location = new System.Drawing.Point(382, 602);
+            this.btn_score.Name = "btn_score";
+            this.btn_score.Size = new System.Drawing.Size(75, 23);
+            this.btn_score.TabIndex = 40;
+            this.btn_score.Text = "Scorez !";
+            this.btn_score.UseSelectable = true;
+            this.btn_score.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // ptb_12
             // 
             this.ptb_12.BackColor = System.Drawing.Color.Transparent;
             this.ptb_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ptb_12.Image = global::Molkky.Properties.Resources._12;
-            this.ptb_12.Location = new System.Drawing.Point(373, 391);
+            this.ptb_12.Location = new System.Drawing.Point(64, 97);
             this.ptb_12.Name = "ptb_12";
-            this.ptb_12.Size = new System.Drawing.Size(41, 46);
+            this.ptb_12.Size = new System.Drawing.Size(41, 69);
             this.ptb_12.TabIndex = 39;
             this.ptb_12.TabStop = false;
-            this.ptb_12.Click += new System.EventHandler(this.ptb_12_Click);
+            this.ptb_12.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_11
             // 
             this.ptb_11.Image = global::Molkky.Properties.Resources._11;
-            this.ptb_11.Location = new System.Drawing.Point(438, 391);
+            this.ptb_11.Location = new System.Drawing.Point(115, 97);
             this.ptb_11.Name = "ptb_11";
-            this.ptb_11.Size = new System.Drawing.Size(42, 46);
+            this.ptb_11.Size = new System.Drawing.Size(42, 69);
             this.ptb_11.TabIndex = 38;
             this.ptb_11.TabStop = false;
-            this.ptb_11.Click += new System.EventHandler(this.ptb_11_Click);
+            this.ptb_11.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_10
             // 
             this.ptb_10.Image = global::Molkky.Properties.Resources._10;
-            this.ptb_10.Location = new System.Drawing.Point(407, 443);
+            this.ptb_10.Location = new System.Drawing.Point(93, 172);
             this.ptb_10.Name = "ptb_10";
-            this.ptb_10.Size = new System.Drawing.Size(40, 46);
+            this.ptb_10.Size = new System.Drawing.Size(40, 69);
             this.ptb_10.TabIndex = 37;
             this.ptb_10.TabStop = false;
-            this.ptb_10.Click += new System.EventHandler(this.ptb_10_Click);
+            this.ptb_10.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_9
             // 
             this.ptb_9.Image = global::Molkky.Properties.Resources._9;
-            this.ptb_9.Location = new System.Drawing.Point(407, 339);
+            this.ptb_9.Location = new System.Drawing.Point(92, 22);
             this.ptb_9.Name = "ptb_9";
-            this.ptb_9.Size = new System.Drawing.Size(41, 46);
+            this.ptb_9.Size = new System.Drawing.Size(41, 69);
             this.ptb_9.TabIndex = 36;
             this.ptb_9.TabStop = false;
-            this.ptb_9.Click += new System.EventHandler(this.ptb_9_Click);
+            this.ptb_9.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_8
             // 
             this.ptb_8.Image = global::Molkky.Properties.Resources._8;
-            this.ptb_8.Location = new System.Drawing.Point(467, 339);
+            this.ptb_8.Location = new System.Drawing.Point(153, 22);
             this.ptb_8.Name = "ptb_8";
-            this.ptb_8.Size = new System.Drawing.Size(42, 46);
+            this.ptb_8.Size = new System.Drawing.Size(42, 69);
             this.ptb_8.TabIndex = 35;
             this.ptb_8.TabStop = false;
-            this.ptb_8.Click += new System.EventHandler(this.ptb_8_Click);
+            this.ptb_8.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_7
             // 
             this.ptb_7.BackColor = System.Drawing.Color.White;
             this.ptb_7.Image = global::Molkky.Properties.Resources._7;
-            this.ptb_7.Location = new System.Drawing.Point(342, 339);
+            this.ptb_7.Location = new System.Drawing.Point(27, 22);
             this.ptb_7.Name = "ptb_7";
-            this.ptb_7.Size = new System.Drawing.Size(41, 46);
+            this.ptb_7.Size = new System.Drawing.Size(41, 69);
             this.ptb_7.TabIndex = 34;
             this.ptb_7.TabStop = false;
-            this.ptb_7.Click += new System.EventHandler(this.ptb_7_Click);
+            this.ptb_7.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_6
             // 
             this.ptb_6.Image = global::Molkky.Properties.Resources._6;
-            this.ptb_6.Location = new System.Drawing.Point(500, 391);
+            this.ptb_6.Location = new System.Drawing.Point(163, 97);
             this.ptb_6.Name = "ptb_6";
-            this.ptb_6.Size = new System.Drawing.Size(42, 46);
+            this.ptb_6.Size = new System.Drawing.Size(41, 69);
             this.ptb_6.TabIndex = 33;
             this.ptb_6.TabStop = false;
-            this.ptb_6.Click += new System.EventHandler(this.ptb_6_Click);
+            this.ptb_6.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_5
             // 
             this.ptb_5.Image = global::Molkky.Properties.Resources._5;
-            this.ptb_5.Location = new System.Drawing.Point(311, 391);
+            this.ptb_5.Location = new System.Drawing.Point(16, 97);
             this.ptb_5.Name = "ptb_5";
-            this.ptb_5.Size = new System.Drawing.Size(42, 46);
+            this.ptb_5.Size = new System.Drawing.Size(42, 69);
             this.ptb_5.TabIndex = 32;
             this.ptb_5.TabStop = false;
-            this.ptb_5.Click += new System.EventHandler(this.ptb_5_Click);
+            this.ptb_5.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_4
             // 
             this.ptb_4.Image = global::Molkky.Properties.Resources._4;
-            this.ptb_4.Location = new System.Drawing.Point(467, 443);
+            this.ptb_4.Location = new System.Drawing.Point(139, 172);
             this.ptb_4.Name = "ptb_4";
-            this.ptb_4.Size = new System.Drawing.Size(41, 46);
+            this.ptb_4.Size = new System.Drawing.Size(41, 69);
             this.ptb_4.TabIndex = 31;
             this.ptb_4.TabStop = false;
-            this.ptb_4.Click += new System.EventHandler(this.ptb_4_Click);
+            this.ptb_4.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_3
             // 
             this.ptb_3.Image = global::Molkky.Properties.Resources._3;
-            this.ptb_3.Location = new System.Drawing.Point(342, 443);
+            this.ptb_3.Location = new System.Drawing.Point(46, 172);
             this.ptb_3.Name = "ptb_3";
-            this.ptb_3.Size = new System.Drawing.Size(41, 46);
+            this.ptb_3.Size = new System.Drawing.Size(41, 69);
             this.ptb_3.TabIndex = 30;
             this.ptb_3.TabStop = false;
-            this.ptb_3.Click += new System.EventHandler(this.ptb_3_Click);
+            this.ptb_3.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_2
             // 
             this.ptb_2.Image = global::Molkky.Properties.Resources._2;
-            this.ptb_2.Location = new System.Drawing.Point(429, 495);
+            this.ptb_2.Location = new System.Drawing.Point(116, 247);
             this.ptb_2.Name = "ptb_2";
-            this.ptb_2.Size = new System.Drawing.Size(41, 46);
+            this.ptb_2.Size = new System.Drawing.Size(41, 69);
             this.ptb_2.TabIndex = 29;
             this.ptb_2.TabStop = false;
-            this.ptb_2.Click += new System.EventHandler(this.ptb_2_Click);
+            this.ptb_2.Click += new System.EventHandler(this.ptb_Click);
             // 
             // ptb_1
             // 
             this.ptb_1.Image = global::Molkky.Properties.Resources._1;
-            this.ptb_1.Location = new System.Drawing.Point(382, 495);
+            this.ptb_1.Location = new System.Drawing.Point(64, 247);
             this.ptb_1.Name = "ptb_1";
-            this.ptb_1.Size = new System.Drawing.Size(41, 46);
+            this.ptb_1.Size = new System.Drawing.Size(41, 69);
             this.ptb_1.TabIndex = 28;
             this.ptb_1.TabStop = false;
-            this.ptb_1.Click += new System.EventHandler(this.ptb_1_Click);
+            this.ptb_1.Click += new System.EventHandler(this.ptb_Click);
             // 
-            // lbl_tourJoueur
+            // lbl_50
             // 
-            this.lbl_tourJoueur.AutoSize = true;
-            this.lbl_tourJoueur.Location = new System.Drawing.Point(252, 122);
-            this.lbl_tourJoueur.Name = "lbl_tourJoueur";
-            this.lbl_tourJoueur.Size = new System.Drawing.Size(108, 19);
-            this.lbl_tourJoueur.TabIndex = 55;
-            this.lbl_tourJoueur.Text = "*nom du joueur*";
+            this.lbl_50.AutoSize = true;
+            this.lbl_50.Location = new System.Drawing.Point(338, 170);
+            this.lbl_50.Name = "lbl_50";
+            this.lbl_50.Size = new System.Drawing.Size(28, 19);
+            this.lbl_50.TabIndex = 55;
+            this.lbl_50.Text = "/50";
+            // 
+            // lbl_501
+            // 
+            this.lbl_501.AutoSize = true;
+            this.lbl_501.Location = new System.Drawing.Point(532, 170);
+            this.lbl_501.Name = "lbl_501";
+            this.lbl_501.Size = new System.Drawing.Size(28, 19);
+            this.lbl_501.TabIndex = 56;
+            this.lbl_501.Text = "/50";
+            // 
+            // panelJeu
+            // 
+            this.panelJeu.Controls.Add(this.ptb_12);
+            this.panelJeu.Controls.Add(this.ptb_11);
+            this.panelJeu.Controls.Add(this.ptb_10);
+            this.panelJeu.Controls.Add(this.ptb_9);
+            this.panelJeu.Controls.Add(this.ptb_8);
+            this.panelJeu.Controls.Add(this.ptb_7);
+            this.panelJeu.Controls.Add(this.ptb_6);
+            this.panelJeu.Controls.Add(this.ptb_5);
+            this.panelJeu.Controls.Add(this.ptb_4);
+            this.panelJeu.Controls.Add(this.ptb_3);
+            this.panelJeu.Controls.Add(this.ptb_2);
+            this.panelJeu.Controls.Add(this.ptb_1);
+            this.panelJeu.Location = new System.Drawing.Point(314, 244);
+            this.panelJeu.Name = "panelJeu";
+            this.panelJeu.Size = new System.Drawing.Size(245, 339);
+            this.panelJeu.TabIndex = 57;
+            // 
+            // lblJoueur
+            // 
+            this.lblJoueur.AutoSize = true;
+            this.lblJoueur.Location = new System.Drawing.Point(209, 122);
+            this.lblJoueur.Name = "lblJoueur";
+            this.lblJoueur.Size = new System.Drawing.Size(81, 19);
+            this.lblJoueur.TabIndex = 58;
+            this.lblJoueur.Text = "metroLabel1";
             // 
             // Partie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 700);
-            this.Controls.Add(this.lbl_tourJoueur);
-            this.Controls.Add(this.lbl_ptsSolo);
+            this.Controls.Add(this.lblJoueur);
+            this.Controls.Add(this.panelJeu);
+            this.Controls.Add(this.lbl_501);
+            this.Controls.Add(this.lbl_50);
+            this.Controls.Add(this.lbl_ptsRestant);
             this.Controls.Add(this.lbl_precisionPourcentage);
             this.Controls.Add(this.lbl_precision);
             this.Controls.Add(this.lbl_rate);
             this.Controls.Add(this.lbl_nbRate);
-            this.Controls.Add(this.lbl_ptsRestant);
+            this.Controls.Add(this.lbl_ptsMarque);
             this.Controls.Add(this.lbl_tour);
             this.Controls.Add(this.pgrbar_score);
             this.Controls.Add(this.lbl_joueurEfficacePlus);
             this.Controls.Add(this.lbl_efficaceMoins);
             this.Controls.Add(this.lbl_joueurEfficaceMoins);
             this.Controls.Add(this.lbl_efficacePlus);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.ptb_12);
-            this.Controls.Add(this.ptb_11);
-            this.Controls.Add(this.ptb_10);
-            this.Controls.Add(this.ptb_9);
-            this.Controls.Add(this.ptb_8);
-            this.Controls.Add(this.ptb_7);
-            this.Controls.Add(this.ptb_6);
-            this.Controls.Add(this.ptb_5);
-            this.Controls.Add(this.ptb_4);
-            this.Controls.Add(this.ptb_3);
-            this.Controls.Add(this.ptb_2);
-            this.Controls.Add(this.ptb_1);
+            this.Controls.Add(this.btn_score);
             this.Name = "Partie";
             this.Text = "Leikki";
             ((System.ComponentModel.ISupportInitialize)(this.ptb_12)).EndInit();
@@ -362,6 +395,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_1)).EndInit();
+            this.panelJeu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,19 +403,19 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroLabel lbl_ptsSolo;
+        private MetroFramework.Controls.MetroLabel lbl_ptsRestant;
         private MetroFramework.Controls.MetroLabel lbl_precisionPourcentage;
         private MetroFramework.Controls.MetroLabel lbl_precision;
         private MetroFramework.Controls.MetroLabel lbl_rate;
         private MetroFramework.Controls.MetroLabel lbl_nbRate;
-        private MetroFramework.Controls.MetroLabel lbl_ptsRestant;
+        private MetroFramework.Controls.MetroLabel lbl_ptsMarque;
         private MetroFramework.Controls.MetroLabel lbl_tour;
         private MetroFramework.Controls.MetroProgressBar pgrbar_score;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficacePlus;
         private MetroFramework.Controls.MetroLabel lbl_efficaceMoins;
         private MetroFramework.Controls.MetroLabel lbl_joueurEfficaceMoins;
         private MetroFramework.Controls.MetroLabel lbl_efficacePlus;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btn_score;
         private System.Windows.Forms.PictureBox ptb_12;
         private System.Windows.Forms.PictureBox ptb_11;
         private System.Windows.Forms.PictureBox ptb_10;
@@ -394,6 +428,9 @@
         private System.Windows.Forms.PictureBox ptb_3;
         private System.Windows.Forms.PictureBox ptb_2;
         private System.Windows.Forms.PictureBox ptb_1;
-        private MetroFramework.Controls.MetroLabel lbl_tourJoueur;
+        private MetroFramework.Controls.MetroLabel lbl_50;
+        private MetroFramework.Controls.MetroLabel lbl_501;
+        private System.Windows.Forms.Panel panelJeu;
+        private MetroFramework.Controls.MetroLabel lblJoueur;
     }
 }

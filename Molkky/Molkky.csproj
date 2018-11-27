@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Equipe.cs" />
     <Compile Include="Classes\Joueur.cs" />
     <Compile Include="Classes\Lancer.cs" />
     <Compile Include="Classes\Partie.cs" />
@@ -68,12 +69,6 @@
     </Compile>
     <Compile Include="Vues\Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vues\Equipe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vues\Equipe.Designer.cs">
-      <DependentUpon>Equipe.cs</DependentUpon>
     </Compile>
     <Compile Include="Vues\Joueur.cs">
       <SubType>Form</SubType>
@@ -97,9 +92,6 @@
     </Compile>
     <EmbeddedResource Include="Vues\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vues\Equipe.resx">
-      <DependentUpon>Equipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vues\Joueur.resx">
       <DependentUpon>Joueur.cs</DependentUpon>
