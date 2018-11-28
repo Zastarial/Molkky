@@ -89,42 +89,12 @@
     <Compile Include="Formulaires\SyncNews.Designer.cs">
       <DependentUpon>SyncNews.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Accueil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Accueil.Designer.cs">
-      <DependentUpon>Accueil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SelectionJoueur.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\SelectionJoueur.Designer.cs">
-      <DependentUpon>SelectionJoueur.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\NewsSync.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\NewsSync.Designer.cs">
-      <DependentUpon>NewsSync.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Jeu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\Jeu.Designer.cs">
-      <DependentUpon>Jeu.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Formulaires\AccueilMolkky.resx">
       <DependentUpon>AccueilMolkky.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaires\SelectionJoueur.resx">
-      <DependentUpon>SelectionJoueur.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Accueil.resx">
-      <DependentUpon>Accueil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\SelectionJoueur.resx">
       <DependentUpon>SelectionJoueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -137,12 +107,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\NewsSync.resx">
-      <DependentUpon>NewsSync.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\Jeu.resx">
-      <DependentUpon>Jeu.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

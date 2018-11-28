@@ -12,9 +12,12 @@ namespace Molkky.Formulaires
 {
     public partial class EnPartie : Form
     {
-        public EnPartie()
+        List<Classes.Joueur> joueurs;
+
+        public EnPartie(List<Classes.Joueur> lesJoueurs)
         {
             InitializeComponent();
+            this.joueurs = lesJoueurs;
         }
     }
 }

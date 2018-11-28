@@ -32,6 +32,7 @@
             this.tbx_nom = new System.Windows.Forms.TextBox();
             this.btn_nom = new System.Windows.Forms.Button();
             this.btn_lancementPartie = new System.Windows.Forms.Button();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_joueur)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,11 +75,22 @@
             this.btn_lancementPartie.UseVisualStyleBackColor = true;
             this.btn_lancementPartie.Click += new System.EventHandler(this.btn_lancementPartie_Click);
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(179, 327);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(103, 46);
+            this.metroButton1.TabIndex = 4;
+            this.metroButton1.Text = "metroButton1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // SelectionJoueur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.btn_lancementPartie);
             this.Controls.Add(this.btn_nom);
             this.Controls.Add(this.tbx_nom);
@@ -97,5 +109,6 @@
         private System.Windows.Forms.TextBox tbx_nom;
         private System.Windows.Forms.Button btn_nom;
         private System.Windows.Forms.Button btn_lancementPartie;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }
