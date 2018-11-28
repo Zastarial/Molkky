@@ -1,28 +1,100 @@
-[
-  {
-    "PseudoJoueur": "Menethil",
-    "Statistique": null
-  },
-  {
-    "PseudoJoueur": "Arthas",
-    "Statistique": null
-  }
-][
-  {
-    "PseudoJoueur": "Hurlenfer",
-    "Statistique": null
-  },
-  {
-    "PseudoJoueur": "Garrosh",
-    "Statistique": null
-  }
-][][
-  {
-    "PseudoJoueur": "Valjean",
-    "Statistique": null
-  },
-  {
-    "PseudoJoueur": "Jean",
-    "Statistique": null
-  }
-]
+{
+  "IdStatistique": 0,
+  "MeilleurMoyenne": 0,
+  "JoueurPlusPrecis": null,
+  "MeilleurJoueur": null,
+  "ListePartie": [
+    {
+      "NumPartie": 0,
+      "DateDebutPartie": "0001-01-01T00:00:00",
+      "DateFinPartie": "0001-01-01T00:00:00",
+      "LesJoueurs": [
+        {
+          "PseudoJoueur": "SebPern",
+          "PartieJouee": 1,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        },
+        {
+          "PseudoJoueur": "Lilian",
+          "PartieJouee": 0,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        }
+      ]
+    },
+    {
+      "NumPartie": 0,
+      "DateDebutPartie": "0001-01-01T00:00:00",
+      "DateFinPartie": "0001-01-01T00:00:00",
+      "LesJoueurs": [
+        {
+          "PseudoJoueur": "SebPern",
+          "PartieJouee": 1,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        },
+        {
+          "PseudoJoueur": "Lilian",
+          "PartieJouee": 0,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        }
+      ]
+    },
+    {
+      "NumPartie": 0,
+      "DateDebutPartie": "0001-01-01T00:00:00",
+      "DateFinPartie": "0001-01-01T00:00:00",
+      "LesJoueurs": [
+        {
+          "PseudoJoueur": "SebPern",
+          "PartieJouee": 0,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        },
+        {
+          "PseudoJoueur": "Lilian",
+          "PartieJouee": 0,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        }
+      ]
+    },
+    {
+      "NumPartie": 0,
+      "DateDebutPartie": "0001-01-01T00:00:00",
+      "DateFinPartie": "0001-01-01T00:00:00",
+      "LesJoueurs": [
+        {
+          "PseudoJoueur": "SebPern",
+          "PartieJouee": 0,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        },
+        {
+          "PseudoJoueur": "Lilian",
+          "PartieJouee": 0,
+          "PartieGagnee": 0,
+          "Precision": 0,
+          "Efficacite": 0,
+          "Ratio": 0
+        }
+      ]
+    }
+  ]
+}

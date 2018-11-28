@@ -29,7 +29,7 @@ namespace Molkky.Vues
             InitializeComponent();
             partie = unePartie;
             quilles = new List<CheckBox>();
-            joueurs = partie.lesJoueurs;
+            //joueurs = partie.lesJoueurs;
             foreach (Control c in panelJeu.Controls)
             {
                 if (c is CheckBox) { quilles.Add((CheckBox)c); }
@@ -76,15 +76,15 @@ namespace Molkky.Vues
         }
         private void liveScore()
         {
-        if(nbQuillesTouchees == 1)
-            {
-                //valeur de la quille
-                break;
-            }
-        else if
-                {
+        //if(nbQuillesTouchees == 1)
+        //    {
+        //        //valeur de la quille
+        //        break;
+        //    }
+        //else if
+        //        {
 
-            }
+        //    }
         }
         
 

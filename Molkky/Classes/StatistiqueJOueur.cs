@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace Molkky.Classes
 {
-    class StatistiqueJoueur
+    public class StatistiqueJoueur
     {
         int partieJouee;
         int partieGagnee;
         int precision;
         int efficacite;
         int ratio;
+        Joueur joueur;
+
+        public StatistiqueJoueur()
+        {
+        }
 
         public StatistiqueJoueur(int partieJouee, int partieGagnee, int precision, int efficacite, int ratio)
         {
@@ -28,5 +33,6 @@ namespace Molkky.Classes
         public int Precision { get => precision; set => precision = value; }
         public int Efficacite { get => efficacite; set => efficacite = value; }
         public int Ratio { get => ratio; set => ratio = value; }
+        public Joueur Joueur { get => joueur; set => joueur = value; }
     }
 }

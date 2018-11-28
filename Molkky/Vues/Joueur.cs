@@ -14,20 +14,15 @@ namespace Molkky.Vues
 {
     public partial class Joueur : MetroFramework.Forms.MetroForm
     {
-        public Joueur()
+        List<Classes.Joueur> player;
+        public Joueur(List<Classes.Joueur> lesJoueurs)
         {
             InitializeComponent();
-
-            /*
-                using (StreamReader file = File.OpenText(@"C:\BTS SIO\Molkky\joueur.json"))
+            player = lesJoueurs;
+            foreach (Classes.Joueur j in player)
             {
-                
-                JsonSerializer serializer = new JsonSerializer();
-                Classes.Joueur jsonJoueur = (Classes.Joueur)serializer.Deserialize(file, typeof(Classes.Joueur));
-                dtg_player.Rows.Insert(0, false, jsonJoueur);
-                
-            } 
-            */
+                dtg_player.Rows.Insert(0, false, j);
+            }
         }
 
         private void btn_addplayer_Click(object sender, EventArgs e)
@@ -50,26 +45,18 @@ namespace Molkky.Vues
 
         private void btn_jouer_Click(object sender, EventArgs e)
         {
-            
-            List<Classes.Joueur> player = new List<Classes.Joueur>();
+            List<Classes.Joueur> playerSelec=new List<Classes.Joueur>();
 
             var checkedRows = from DataGridViewRow r in dtg_player.Rows where Convert.ToBoolean(r.Cells[0].Value) == true select r;
             
             foreach(var row in checkedRows)
             {
                 Classes.Joueur j = new Classes.Joueur(row.Cells[1].Value.ToString());
-                player.Add(j);
+                playerSelec.Add(j);
             }
 
 
-            File.AppendAllText(@"C:\BTS SIO\Molkky\joueur.json", JsonConvert.SerializeObject(player, Formatting.Indented));
-            using (StreamReader file = File.OpenText(@"C:\BTS SIO\Molkky\joueur.json"))
-            {
-                JsonSerializer serializer = new JsonSerializer();
-                List<Classes.Joueur> jsonJoueur = (List<Classes.Joueur>)serializer.Deserialize(file, typeof(List<Classes.Joueur>));
-            }
-                Partie game = new Partie();
-            game.Show();
+
         }
     }
 }

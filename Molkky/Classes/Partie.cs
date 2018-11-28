@@ -6,24 +6,30 @@ using System.Threading.Tasks;
 
 namespace Molkky.Classes
 {
-    class Partie
+    public class Partie
     {
         private int numPartie;
         private DateTime dateDebutPartie;
         private DateTime dateFinPartie;
+        private List<Joueur> lesJoueurs;
+
+        public Partie()
+        {
+            this.lesJoueurs = new List<Joueur>();
+        }
 
         public Partie(int numPartie, DateTime dateDebutPartie, DateTime dateFinPartie, List<Joueur> lesJoueurs)
         {
             this.NumPartie = numPartie;
             this.DateDebutPartie = dateDebutPartie;
             this.DateFinPartie = dateFinPartie;
-            this.lesJoueurs = lesJoueurs;
+            this.LesJoueurs = lesJoueurs;
         }
         
 
         public int NumPartie { get => numPartie; set => numPartie = value; }
         public DateTime DateDebutPartie { get => dateDebutPartie; set => dateDebutPartie = value; }
         public DateTime DateFinPartie { get => dateFinPartie; set => dateFinPartie = value; }
-        public List<Joueur> lesJoueurs { get; set; }
+        public List<Joueur> LesJoueurs { get => lesJoueurs; set => lesJoueurs = value; }
     }
 }
