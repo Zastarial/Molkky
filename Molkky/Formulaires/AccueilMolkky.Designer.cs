@@ -40,6 +40,7 @@
             this.btn_News.TabIndex = 0;
             this.btn_News.Text = "News & Synchronisation";
             this.btn_News.UseSelectable = true;
+            this.btn_News.Click += new System.EventHandler(this.btn_News_Click);
             // 
             // btn_pvp
             // 

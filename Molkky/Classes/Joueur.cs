@@ -16,11 +16,19 @@ namespace Molkky.Classes
         int efficacite;
         int ratio;
 
+        public Joueur()
+        {
+        }
+
         public Joueur(string pseudoJoueur)
         {
             this.PseudoJoueur = pseudoJoueur;
         }
-
+        public Joueur(string pseudoJoueur, int nbPartie)
+        {
+            this.PseudoJoueur = pseudoJoueur;
+            this.partieJouee = nbPartie;
+        }
         public string PseudoJoueur { get => pseudoJoueur; set => pseudoJoueur = value; }
         public int PartieJouee { get => partieJouee; set => partieJouee = value; }
         public int PartieGagnee { get => partieGagnee; set => partieGagnee = value; }
@@ -39,6 +47,11 @@ namespace Molkky.Classes
         public override string ToString()
         {
             return this.PseudoJoueur;
+        }
+
+        public void newPartie()
+        {
+            this.partieJouee++;
         }
         // public List<StatistiqueJoueur> StatistiqueJoueurs { get => statistiqueJoueurs; set => statistiqueJoueurs = value; }
     }

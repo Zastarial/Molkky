@@ -9,6 +9,8 @@ namespace Molkky
 {
     static class Program
     {
+        public static Molkky.Classes.Statistique statistique = new Molkky.Classes.Statistique();
+
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
