@@ -118,6 +118,9 @@
     <EmbeddedResource Include="Formulaires\AccueilMolkky.resx">
       <DependentUpon>AccueilMolkky.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\EnPartie.resx">
+      <DependentUpon>EnPartie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulaires\SelectionJoueur.resx">
       <DependentUpon>SelectionJoueur.cs</DependentUpon>
     </EmbeddedResource>

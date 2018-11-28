@@ -29,15 +29,15 @@ namespace Molkky.Formulaires
             col.HeaderText = "Participation";
             dtgv_joueur.Columns[0].Name = "Nom du joueur";
             dtgv_joueur.Columns[1].Name = "KDA";
-            dtgv_joueur.Rows.Add(tbx_nom.Text);
+            dtgv_joueur.Rows.Add(joueur);
 
         }
         
 
         private void btn_lancementPartie_Click(object sender, EventArgs e)
         {
-            Partie game = new Partie();
-            //game.Show();
+            EnPartie game = new EnPartie();
+            game.Show();
 
         }
         
