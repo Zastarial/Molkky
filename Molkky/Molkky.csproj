@@ -65,37 +65,67 @@
     <Compile Include="Classes\Partie.cs" />
     <Compile Include="Classes\Statistique.cs" />
     <Compile Include="Classes\StatistiqueJoueur.cs" />
-    <Compile Include="Vues\Accueil.cs">
+    <Compile Include="Formulaires\AccueilMolkky.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Accueil.Designer.cs">
+    <Compile Include="Formulaires\AccueilMolkky.Designer.cs">
+      <DependentUpon>AccueilMolkky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\EnPartie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\EnPartie.Designer.cs">
+      <DependentUpon>EnPartie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\SelectionJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\SelectionJoueur.Designer.cs">
+      <DependentUpon>SelectionJoueur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\SyncNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\SyncNews.Designer.cs">
+      <DependentUpon>SyncNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vues\Joueur.cs">
+    <Compile Include="Views\SelectionJoueur.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\Joueur.Designer.cs">
-      <DependentUpon>Joueur.cs</DependentUpon>
+    <Compile Include="Views\SelectionJoueur.Designer.cs">
+      <DependentUpon>SelectionJoueur.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vues\NewsSync.cs">
+    <Compile Include="Views\NewsSync.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\NewsSync.Designer.cs">
+    <Compile Include="Views\NewsSync.Designer.cs">
       <DependentUpon>NewsSync.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vues\partie.cs">
+    <Compile Include="Views\Jeu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vues\partie.Designer.cs">
-      <DependentUpon>partie.cs</DependentUpon>
+    <Compile Include="Views\Jeu.Designer.cs">
+      <DependentUpon>Jeu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vues\Accueil.resx">
+    <EmbeddedResource Include="Formulaires\AccueilMolkky.resx">
+      <DependentUpon>AccueilMolkky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\SelectionJoueur.resx">
+      <DependentUpon>SelectionJoueur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\Joueur.resx">
-      <DependentUpon>Joueur.cs</DependentUpon>
+    <EmbeddedResource Include="Views\SelectionJoueur.resx">
+      <DependentUpon>SelectionJoueur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,11 +137,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Vues\NewsSync.resx">
+    <EmbeddedResource Include="Views\NewsSync.resx">
       <DependentUpon>NewsSync.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vues\partie.resx">
-      <DependentUpon>partie.cs</DependentUpon>
+    <EmbeddedResource Include="Views\Jeu.resx">
+      <DependentUpon>Jeu.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config">
       <SubType>Designer</SubType>
