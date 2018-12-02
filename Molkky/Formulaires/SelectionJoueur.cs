@@ -64,7 +64,7 @@ namespace Molkky.Formulaires
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            List<Joueur> joueursSelec = new List<Joueur>();
+            List<Joueur> joueursSelec = joueurs;
             Joueur j = new Joueur ("");
             
            
@@ -73,6 +73,14 @@ namespace Molkky.Formulaires
                 j.PseudoJoueur = ligne.Cells[0].Value.ToString();
                 j.newPartie();
                 joueursSelec.Add(j);
+                
+                foreach (Joueur jj in joueursSelec)
+                {
+                    jj.PseudoJoueur.Equals(ligne.Cells[0].Value.ToString());
+                    
+
+                }
+
             }
 
             Partie p = new Partie();
